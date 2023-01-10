@@ -1,0 +1,554 @@
+/* ################## GERAL ########################### */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ################## HEADER ########################### */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: rgb(31, 31, 31);
+
+  max-height: 12rem;
+
+  padding-top: 3.8rem;
+  padding-bottom: 2.5rem;
+}
+
+header .logo img {
+  width: 15rem;
+}
+
+header .list-header ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+header .list-header ul li a {
+  text-transform: uppercase;
+  list-style-type: none;
+  text-decoration: none;
+
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: white;
+}
+
+header .list-header ul li a:hover {
+  color: rgb(64, 125, 64);
+  transition: .4s;
+}
+
+header .tel-contact a {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  
+  margin-right: 3rem;
+}
+
+header .tel-contact a:hover {
+  color: rgb(64, 125, 64);
+  transition: .4s;
+}
+
+/* ################## IMAGEM INICIAL ########################### */
+.img-initial img {
+  width: 100%;
+  height:65vh;
+
+  object-fit: fill;
+}
+
+/* ################## ABOUT (SOBRE) ########################### */
+.about {
+  margin-top: -.4rem;
+  width: 100%;
+  background-color: rgb(225, 220, 220);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 5rem;
+}
+
+.about small {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: 'Barlow', sans-serif;
+
+  margin-right: 110rem;
+}
+
+.about h3 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  font-family: 'Barlow', sans-serif;
+  margin-right: 97rem;
+
+  padding-bottom: 3rem;
+}
+
+.about .line {
+  height: 1px;
+  width: 100%;
+  background-color: black;
+
+  margin-bottom: 5rem;
+}
+
+.about p {
+  
+  max-width: 50%;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: 'Barlow', sans-serif;
+  text-align: center;
+  line-height: 3rem;
+}
+
+/* ################## PARTS (PEÇAS) ########################### */
+.total-parts {
+  background-color: rgb(31, 31, 31);
+
+  padding-bottom: 5rem;
+}
+
+.total-parts h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: 'Barlow', sans-serif;
+
+  padding: 5rem;
+  margin-left: 20rem;
+
+  color: white;
+}
+
+.total-parts .line {
+  height: 1px;
+  width: 95%;
+  margin-left: 4rem;
+  background-color: white;
+
+}
+.parts {
+  padding-top: 5rem;
+
+  max-width: 32rem;
+  margin: 0 auto;
+  margin-left: 30%;
+
+  display: grid;
+  grid-template-columns: 30rem 30rem;
+  grid-gap: 5.5rem;
+}
+
+.parts img {
+  width: 25rem;
+}
+
+.parts h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(213, 223, 213);
+  background-color: rgb(76, 119, 76);
+  padding: .7rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.parts .filtro-oleo {
+  background-color: rgb(170, 192, 170);
+  border-radius: 4rem;
+  padding: 4rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.parts .filtro-oleo:hover {
+  background-color: rgb(115, 143, 115);
+}
+
+.parts .kitEmbreagemDupla {
+  background-color: rgb(170, 192, 170);
+  border-radius: 4rem;
+  padding: 4rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.parts .kitEmbreagemDupla:hover {
+  background-color: rgb(115, 143, 115);
+}
+
+.parts .kitEmbreagemSimples {
+  background-color: rgb(170, 192, 170);
+  border-radius: 4rem;
+  padding: 4rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.parts .kitEmbreagemSimples:hover {
+  background-color: rgb(115, 143, 115);
+}
+
+.parts .kitEmbreagemSimplesPesada {
+  background-color: rgb(170, 192, 170);
+  border-radius: 4rem;
+  padding: 4rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.parts .kitEmbreagemSimplesPesada:hover {
+  background-color: rgb(115, 143, 115);
+}
+
+.total-parts a {
+  color: #06a942;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  margin-right: 6rem;
+
+}
+
+/* ################## FOOTER ########################### */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: rgb(225, 220, 220);
+}
+
+.footer .logo img {
+  width: 25rem;
+}
+
+.footer .button-footer a {
+  border: none;
+  width: 30rem;
+  padding: 3rem;
+  border-radius: 6rem;
+
+  background-color: #25D366;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .6rem;
+
+  color: white;
+  font-size: 1.7rem;
+  font-family: 'Barlow', sans-serif;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  margin-left: 4rem;
+}
+
+.footer .button-footer a:hover {
+  background-color: #06a942;
+  transition: .7s;
+}
+
+.footer ul {
+  list-style-type: none;
+  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  margin-right: 5rem;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  color: rgb(66, 138, 66);
+  font-size: 1.4rem;
+}
+
+.footer ul li a img {
+  width: 4rem;
+}
+
+.footer ul li small {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  font-size: 1.6rem;
+  font-weight: 700;
+
+  margin-right: 12.5rem;
+  padding-bottom: 2rem;
+}
+
+.footer ul li small img {
+  width: 4rem;
+  margin-left: 12rem;
+}
+
+.footer ul .instagram-footer {
+  padding-top: 2rem;
+}
+
+.footer ul .facebook-footer {
+  margin-right: .7rem;
+}
+
+.footer ul .mail-footer {
+  margin-left: 5.6rem;
+}
+
+/* ################## RESPONSIVO ########################### */
+@media (max-width: 1370px) {
+  .about .title-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    max-width: 50rem;
+  }
+
+  .about .title-about h3 {
+    width: 30rem;
+    margin-left: 2rem;
+  }
+
+  .total-parts .parts {
+    margin-right: 10rem;
+  }
+  
+  .total-parts a {
+    margin-left: 30rem
+}
+@media (max-width: 1024px) {
+  /* ################## ABOUT-RESPONSIVO ########################### */
+  .about .title-about {
+    margin: 0 auto;
+    max-width: 60rem;
+  }
+
+  /* ################## IMG-RESPONSIVO ########################### */
+  .img-initial img {
+    height: 35rem;
+    object-fit: fill;
+  }
+
+  /* ################## PARTS-RESPONSIVO ########################### */
+  .total-parts {
+    display: grid;
+    grid-template-columns: 100px;
+  }
+
+  .total-parts .parts {
+    padding-left: 15rem;
+  }
+
+  .total-parts h2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    width: 60rem;
+  }
+
+  .total-parts .line {
+   display: none;
+  }
+
+  .total-parts a {
+    margin: 0 auto;
+    width: 50rem;
+
+    margin-top: 4rem;
+    margin-left: 26rem;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer .button-footer {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 843px) {
+  /* ################## HEADER-RESPONSIVO ########################### */
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    max-width: 84rem;
+  }
+
+  header ul {
+    margin-right: 1rem;
+  }
+
+  header .logo img {
+   width: 10rem;
+  }
+
+  header .tel-contact{
+    display: none;
+  }
+  /* ################## IMG-RESPONSIVO ########################### */
+  .img-initial img {
+    height: 30rem;
+    max-width: 84rem;
+  }
+    /* ################## ABOUT-RESPONSIVO ########################### */
+  .about .title-about {
+    max-width: 35rem;
+  
+  }
+    /* ################## PARTS-RESPONSIVO ########################### */
+  .total-parts h2 {
+    max-width: 50rem;
+    padding-right: 20rem;
+  }
+
+  .parts {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+ 
+  margin-left: 20rem;
+}
+
+
+  .total-parts a {
+    margin-left: 12rem;
+  }
+}}
+
+@media (max-width: 700px) {
+  .total-parts h2 {
+  margin: 0 auto;
+  width: 120rem;
+  }
+}
+
+@media (max-width: 621px) {
+  .total-parts h2 {
+    margin: 0 auto;
+    width: 120rem;
+    }
+
+    .total-parts a {
+      display: flex;
+      margin: 0 auto;
+      margin-left: 0rem;
+      margin-bottom: rem;
+      margin-top: 5rem;
+    }
+}
+
+@media (max-width: 520px) {
+  .img-initial img {
+    height: 20rem;
+  }
+
+  .total-parts h2 {
+    margin: 0 auto;
+    width: 40rem;
+  }
+
+  .parts {
+    margin: 0 auto;
+  }
+
+  .total-parts a {
+    width: 38rem;
+    margin-left: 5rem;
+  }
+}
+
+@media (max-width: 432px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header .list-header ul{
+    margin-bottom: 4rem;
+  }
+  .total-parts h2 {
+    margin: 0 auto;
+    width: 30rem;
+
+    font-size: 2.2rem;
+  }
+
+  .img-initial img {
+    height: 15rem;
+  }
+
+  .parts {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 20rem;
+    margin: 0 auto;
+  }
+
+  .total-parts a {
+    margin: 0 auto;
+    margin-right: 2rem;
+    width: 20rem;
+    margin-top: 2rem;
+  }
+
+}
